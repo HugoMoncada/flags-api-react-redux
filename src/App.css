@@ -23,10 +23,11 @@ body{
   font-weight: 800;
 }
 
-/* Images came in different sizes this fized it */
-.card-img-top{
-  height: 160px;
+/* Images came in different sizes this fixed it */
+
+.pais{
   width: 100%;
+  height: 175px;
   object-fit: cover;
 }
 
@@ -34,14 +35,19 @@ a{
   color: black; 
 }
 
-.singleCountryImg img{
-  height: 350px;
+/*Single country*/
+.img-fluid, img{
   width: 100%;
-  object-fit: cover;
 }
 
 .singleCardData, p{
   margin-bottom: 9px;
+  font-size: 17px;
+}
+
+.borders{
+  font-size: 17px;
+  margin-left: 2px;
 }
 
 /* space between cards */

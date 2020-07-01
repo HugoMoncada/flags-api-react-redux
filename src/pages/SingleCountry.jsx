@@ -29,7 +29,7 @@ const SingleCountry =({country,loading, setOneCountry}) => {
                     <section className="row mb-5">
 
                          <div className="col-md-6">
-                              <div className="card singleCountryImg">
+                              <div className="img-fluid">
                                    <img src={country.flag} alt=""/>
                               </div>
                          </div>
@@ -37,7 +37,7 @@ const SingleCountry =({country,loading, setOneCountry}) => {
                          <article className="col-md-6 p-3">
 
                               <div className="row">
-                                   <h2 className="col-12 mt-2 mb-4"><strong>{country.name}</strong></h2>
+                                   <h2 className="col-12 mt-1 mb-4"><strong>{country.name}</strong></h2>
                               </div>
 
                               <div className="row singleCardData">
@@ -60,7 +60,7 @@ const SingleCountry =({country,loading, setOneCountry}) => {
                                         </p>
                                    </div>
                               </div>
-                              <div className="col-12 px-3"><strong className="mr-1">Borders Countries: </strong>
+                              <div className="col-12 px-2 borders"><strong className="mr-1 ">Borders Countries: </strong>
                               {
                                    //Border recibes objects filtered in the reducer gotten from the countrylist no api fetch
                                    //this got a list of lists so i had to access one level deeper
@@ -78,11 +78,7 @@ const SingleCountry =({country,loading, setOneCountry}) => {
                     
                }
                     <Link className="btn btn-light btn-lg btn-block mx-0 btnSinglePage" to="/">
-                         <svg width="1.2em" height="1.2em" viewBox="0 0 15 17" className="mr-1 bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                         <path fillRule="evenodd" d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
-                         <path fillRule="evenodd" d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                         </svg>
-                         Back
+                         <strong>Back</strong>
                     </Link>
           </div>
      )

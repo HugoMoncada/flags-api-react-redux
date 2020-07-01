@@ -26,7 +26,7 @@ const Country = ({flag,name,population,region,capital,setOneCountry}) => {
                     lazy loading images will load when they are required.
                     helps memory tons    
                  */}
-                 <img loading="lazy" className="card-img-top mh-100" src={flag} alt=""/>
+                 <img loading="lazy" className="pais" src={flag} alt=""/>
                  <div className="card-body">
                    <h5 className="card-title mb-3"><strong>{name}</strong></h5>
                    <p className="card-text mb-2"><strong>Population: </strong>{population}</p>
