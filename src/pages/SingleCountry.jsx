@@ -77,7 +77,7 @@ const SingleCountry =({country,loading, setOneCountry}) => {
                     )
                     
                }
-                    <Link className="btn btn-light btn-lg btn-block mx-0 btnSinglePage" to="/">
+                    <Link className="btn btn-light btn-lg btn-block mx-0 btnSinglePage mb-4" to="/">
                          <strong>Back</strong>
                     </Link>
           </div>
